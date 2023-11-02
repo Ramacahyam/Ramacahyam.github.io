@@ -1,0 +1,141 @@
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0,8);
+    padding: 15px;
+    border-bottom: 1px solid 	#DAA520;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+
+.navbar .navbar-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar .navbar-logo span {
+    color: #DAA520;
+}
+
+.navbar-nav>a{
+    color: white;
+    display: inline;
+    margin: 10px;
+    font-size: 1,5rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #DAA520;
+}
+
+.navbar .navbar a ::after {
+    content: '';
+    display: block;
+    padding-bottom: o,5rem;
+    border-bottom: 0,1rem solidC
+ 
+    
+}
+
+.navbar .navbar-extra a {
+    color: white;
+    margin: 0 0.5px;
+    padding: 10px;
+}
+
+.navbar .navbar-extra a :hover {
+    color: #DAA520;
+}
+
+#hamburger-menu {
+    display: none;
+}
+ 
+
+/* media conten */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+   background-image: url('../img/hider-foyto.jpeeg.jpg')
+}
+/* menida queris */
+
+
+/* leptop */
+
+@media (max-width : 1366px) {
+    html {
+        font-size :100%;
+    }
+}
+/* tablet */
+
+@media (max-width : 768px) {
+    html {
+        font-size : 62,5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 20rem;
+        height: 100vh;
+        transition: 0.3 s;
+        
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: black;
+        display: block;
+        margin: 1,5rem;
+        padding: 0,5;
+        font-size: 1rem;
+    }
+
+    .navbar .navbar-nav a:hover {
+
+        transition: .3s;
+    }
+
+
+}       
+
+/* mobaline hp */
+@media (max-width : 450px) {
+    html {
+        font-size : 55%;
+    }
+}
